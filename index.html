@@ -4,9 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://get.mavo.io/mavo.css"/>
+	<script src="https://get.mavo.io/mavo.js"></script>
+	<title>My Projects</title>
 </head>
 <body>
-  <h1>My Projects</h1>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="https://engstu.github.io/">My Projects</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="https://engstu.github.io/">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">About</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+  
+  <div mv-app="myProjects" mv-storage="https://github.com/EngStu/" class="container">
+    <div class="row">
+
+      <div class="col-lg-4 col-sm-6 mb-4" property="project" mv-multiple>
+        <div class="card h-100 text-success bg-dark">
+					<!-- <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a> -->
+					<h3 class="card-header" property="projectTitle">Project One</h3>
+					<div class="card-body">
+						<p property="projectDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, porro repellat eaque culpa maiores et corporis rem suscipit nobis enim perspiciatis. Eligendi quas quia maiores tenetur culpa consequuntur, expedita minima.</p>
+						<a property="projectUrl" href="https://engstu.github.io/employee-manager/"><button class="btn btn-primary">View Project</button></a>
+					</div>
+        </div>
+			</div>
+			
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
